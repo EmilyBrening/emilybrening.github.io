@@ -30,9 +30,9 @@ body {
 .hero {
   position: relative;
   text-align: center;
-  height: 60vh;
-  background-size: 110%;
-  background-position: left 20% center; /* Bild leicht nach links und unten verschoben */
+  height: 60vh; /* Desktop-Höhe */
+  background-size: 100%; /* Desktop: nicht zu groß */
+  background-position: center 30%; /* Bild leicht nach unten verschoben */
   background-repeat: no-repeat;
   color: #fff;
   display: flex;
@@ -44,7 +44,7 @@ body {
 .hero .overlay {
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(0, 0, 0, 0.35);
+  background: rgba(0,0,0,0.35);
 }
 
 .hero-content {
@@ -53,7 +53,7 @@ body {
 }
 
 .hero h1 {
-  font-family: "Handlee", cursive;
+  font-family: 'Handlee', cursive;
   font-size: 2.6rem;
   font-style: italic;
   margin-bottom: 0.5rem;
@@ -93,7 +93,7 @@ body {
   background: var(--card);
   padding: 1.2rem;
   border-radius: 12px;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.05);
   border: 1px solid #e5ded3;
   opacity: 0;
   transform: translateY(40px);
@@ -203,8 +203,8 @@ body {
 @media (max-width: 768px) {
   .hero {
     height: 50vh;
-    background-size: 140%;
-    background-position: center 30%; /* Handy: mehr herangezoomt, Fokus auf Mitte */
+    background-size: 140%; /* Handy: größer */
+    background-position: center 20%; /* Fokus auf Mitte */
   }
 
   .hero h1 {
