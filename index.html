@@ -11,7 +11,7 @@
 </head>
 <body>
   <!-- Hero-Bereich -->
-  <header class="hero" style="background-image: url('https://cvws.icloud-content.com/B/AYt8weh491B4qZkOTaFEPbyBT8V_Ad3BO-IDWipcES_rW4GQiiwQDwzb/17+-+_MG_7590-Bearbeitet.jpg?o=AstGfRAApa8bq2brHELupe58K35j6ui1TrU6LBI3htV9&v=1&x=3&a=CAogTeyO9qRseLn3QJ3WmQGBIaWAwMNBFWcXpTh9dfESoH8SbxCekeCdnzMYnu67n58zIgEAUgSBT8V_WgQQDwzbaicBZFYVbhoXnJzR4htOajIxGUXp9rJmA0HIQRxsSCmu8o8fuwGELzhyJ1-omLwC5hKAACIV2OgR6UbzT7jBPn5WmIRcMkCu13TsbmMWP1RftA&e=1760734148&fl=&r=1484aadc-42f5-4ada-b237-81d39cbf665b-1&k=hhwRdZJKu9fOme8U9stx0w&ckc=com.apple.clouddocs&ckz=com.apple.CloudDocs&p=177&s=UEQxwVqOJkAK-4PG_7QLZJfKwCo&cd=i');">
+  <header class="hero" style="background-image: url('hund-und-ich.jpg');">
     <div class="overlay"></div>
     <div class="container hero-content">
       <h1>Für ein gesundes Hundeleben</h1>
@@ -21,7 +21,7 @@
   </header>
 
   <main class="container">
-    <!-- Vorteile -->
+    <!-- Features / Vorteile -->
     <section class="features">
       <div class="card">
         <h2>Individuell abgestimmt</h2>
@@ -94,7 +94,21 @@
   </footer>
 
   <script>
+    // Jahr automatisch einfügen
     document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Scroll-Animation für Features-Karten
+    const cards = document.querySelectorAll('.card');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if(entry.isIntersecting){
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.2 });
+
+    cards.forEach(card => observer.observe(card));
   </script>
 </body>
 </html>
