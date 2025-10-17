@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Meine Landingpage</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="container">
+      <h1>Herzlich Willkommen!</h1>
+      <p class="subtitle">Hier erfährst du in wenigen Sekunden, was ich dir biete.</p>
+      <a class="cta" href="#kontakt">Jetzt Kontakt aufnehmen</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="features">
+      <div class="card">
+        <h2>Vorteil 1</h2>
+        <p>Beschreibe kurz deinen ersten Vorteil.</p>
+      </div>
+      <div class="card">
+        <h2>Vorteil 2</h2>
+        <p>Erkläre, warum dein Angebot besonders ist.</p>
+      </div>
+      <div class="card">
+        <h2>Vorteil 3</h2>
+        <p>Füge einen letzten überzeugenden Punkt hinzu.</p>
+      </div>
+    </section>
+
+    <section id="kontakt" class="contact">
+      <h2>Kontakt</h2>
+      <p>Schreib mir direkt eine Nachricht:</p>
+
+      <form action="mailto:deine@email.de" method="post" enctype="text/plain" class="form">
+        <label>
+          Name
+          <input type="text" name="Name" required>
+        </label>
+        <label>
+          E-Mail
+          <input type="email" name="Email" required>
+        </label>
+        <label>
+          Nachricht
+          <textarea name="Nachricht" rows="4" required></textarea>
+        </label>
+        <button type="submit">Absenden</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      © <span id="year"></span> Dein Name
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
