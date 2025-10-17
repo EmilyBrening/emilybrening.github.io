@@ -26,30 +26,38 @@ body {
   padding: 1rem;
 }
 
-/* Hero-Bereich */
+/* Hero */
 .hero {
   position: relative;
   text-align: center;
   height: 60vh;
-  background-size: 110%; /* etwas näher herangezoomt für PC */
-  background-position: left center; /* leicht nach links verschoben */
+  background-size: 110%;
+  background-position: left 20% center; /* Bild leicht nach links und unten verschoben */
   background-repeat: no-repeat;
   color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: background-size 0.5s ease;
+  transition: background-size 0.5s ease, background-position 0.5s ease;
 }
 
-@media (max-width: 768px) {
-  .hero {
-    height: 40vh;
-    background-size: 140%; /* auf Handy stärker herangezoomt */
-    background-position: center center; /* Fokus in der Mitte */
-  }
+.hero .overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.35);
 }
 
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
 
+.hero h1 {
+  font-family: "Handlee", cursive;
+  font-size: 2.6rem;
+  font-style: italic;
+  margin-bottom: 0.5rem;
+}
 
 .subtitle {
   color: #f8f4ef;
@@ -80,12 +88,21 @@ body {
   margin: 3rem 0;
 }
 
+/* Scroll-Animation */
 .card {
   background: var(--card);
   padding: 1.2rem;
   border-radius: 12px;
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.05);
   border: 1px solid #e5ded3;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.card.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .card h2 {
@@ -118,7 +135,6 @@ body {
   margin: 0 auto;
 }
 
-/* Zwei Spalten Layout für Desktop */
 .form .row {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -183,11 +199,12 @@ body {
   text-decoration: underline;
 }
 
-/* Responsive Anpassungen */
+/* Responsive */
 @media (max-width: 768px) {
   .hero {
-    height: 40vh;
-    background-position: center;
+    height: 50vh;
+    background-size: 140%;
+    background-position: center 30%; /* Handy: mehr herangezoomt, Fokus auf Mitte */
   }
 
   .hero h1 {
