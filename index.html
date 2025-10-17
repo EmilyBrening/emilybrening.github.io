@@ -3,25 +3,28 @@
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="Content-Language" content="de">
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="description" content="Kostenlose Ernährungsberatung für Hunde – individuelle Futterpläne und natürliche Tiernahrung.">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Kostenlose Ernährungsberatung für Hunde – natürliche Tiernahrung und individuelle Futterpläne für ein glückliches Hundeleben.">
   <title>Ernährungsberatung</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="hero">
-    <div class="container">
-      <h1>Kostenlose Ernährungsberatung</h1>
-      <p class="subtitle">Finde das passende Futter für deinen Hund – natürlich, gesund und individuell.</p>
+  <!-- Hero-Bereich mit Hintergrundbild -->
+  <header class="hero" style="background-image: url('hund-und-ich.jpg');">
+    <div class="overlay"></div>
+    <div class="container hero-content">
+      <h1>Für ein glückliches Hundeleben</h1>
+      <p class="subtitle">Natürlich, artgerecht und bedarfsdeckend</p>
       <a class="cta" href="#kontakt">Jetzt kostenlos beraten lassen</a>
     </div>
   </header>
 
   <main class="container">
+    <!-- Features / Vorteile -->
     <section class="features">
       <div class="card">
         <h2>Individuell abgestimmt</h2>
-        <p>Jeder Hund ist einzigartig. Ich helfe dir, den perfekten Futterplan für deinen Liebling zu finden.</p>
+        <p>Jeder Hund ist einzigartig. Ich helfe dir, den perfekten Futterplan zu finden.</p>
       </div>
       <div class="card">
         <h2>Natürlich & ausgewogen</h2>
@@ -29,39 +32,62 @@
       </div>
       <div class="card">
         <h2>Kostenlose Beratung</h2>
-        <p>Ich begleite dich persönlich – ganz unverbindlich und kostenfrei.</p>
+        <p>Ich begleite dich persönlich – unverbindlich und kostenfrei.</p>
       </div>
     </section>
 
+    <!-- Kontaktformular -->
     <section id="kontakt" class="contact">
       <h2>Kontakt aufnehmen</h2>
       <p>Schreib mir direkt – ich freue mich auf deine Nachricht:</p>
 
-      <form action="mailto:deine@email.de" method="post" enctype="text/plain" class="form">
+      <form action="mailto:emilybrening@icloud.com" method="post" enctype="text/plain" class="form">
         <label>
-          Name
-          <input type="text" name="Name" required>
+          Vorname
+          <input type="text" name="Vorname" required>
         </label>
         <label>
-          E-Mail
+          Nachname
+          <input type="text" name="Nachname" required>
+        </label>
+        <label>
+          E-Mail-Adresse
           <input type="email" name="Email" required>
         </label>
         <label>
-          Nachricht
-          <textarea name="Nachricht" rows="4" placeholder="Bitte beschreibe kurz dein Anliegen..." required></textarea>
+          Telefonnummer
+          <input type="tel" name="Telefonnummer" required>
+        </label>
+        <label>
+          Aktuelles Futter
+          <input type="text" name="Aktuelles Futter" required>
+        </label>
+        <label>
+          Regelmäßig entwurmt
+          <select name="Entwurmt" required>
+            <option value="">Bitte wählen</option>
+            <option value="Ja">Ja</option>
+            <option value="Nein">Nein</option>
+          </select>
+        </label>
+        <label>
+          Probleme / Unverträglichkeiten
+          <textarea name="Probleme" rows="4" placeholder="Bitte beschreibe hier Probleme oder Unverträglichkeiten..." required></textarea>
         </label>
         <button type="submit">Nachricht senden</button>
       </form>
     </section>
   </main>
 
+  <!-- Footer -->
   <footer class="footer">
     <div class="container">
-      © <span id="year"></span> Ernährungsberatung · <a href="#">Impressum</a>
+      © <span id="year"></span> Ernährungsberatung · <a href="impressum.html">Impressum</a>
     </div>
   </footer>
 
   <script>
+    // aktuelles Jahr automatisch einfügen
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
