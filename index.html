@@ -4,23 +4,24 @@
   <meta charset="utf-8" />
   <meta http-equiv="Content-Language" content="de">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Kostenlose Ernährungsberatung für Hunde – natürliche Tiernahrung und individuelle Futterpläne für ein glückliches Hundeleben.">
+  <meta name="description" content="Kostenlose Ernährungsberatung für Hunde – natürliche Tiernahrung und individuelle Futterpläne für ein gesundes Hundeleben.">
   <title>Ernährungsberatung</title>
   <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- Hero-Bereich mit Hintergrundbild -->
-  <header class="hero" style="background-image: url('https://cvws.icloud-content.com/B/AYt8weh491B4qZkOTaFEPbyBT8V_Ad3BO-IDWipcES_rW4GQiiwQDwzb/17+-+_MG_7590-Bearbeitet.jpg?o=As193v99fw_UbTlpO7QreFZpqmvzSorOnzsADzxr5V_x&v=1&x=3&a=CAogo5VqTfbIeC2uOUv9239hyD6bR12TWrEUk46-8gRddsMSbxCs25yPnzMYrLj4kJ8zIgEAUgSBT8V_WgQQDwzbaieD8_hq3OKmjVL5-xT8LVitrnh34yLPEnl6KWuqjpZowhExCp-9ULZyJy4W_VIfyCYb5lZ51dWDq6AWXhk--7_EC4mBX1eCZFE7Gevx7xI8wQ&e=1760703683&fl=&r=0b1f98a2-6d2e-47c2-9d00-953549b53d58-1&k=hhwRdZJKu9fOme8U9stx0w&ckc=com.apple.clouddocs&ckz=com.apple.CloudDocs&p=177&s=q9TUvxksLd6e2RjYvlkLnzwtpqo&cd=i');">
+  <!-- Hero-Bereich -->
+  <header class="hero" style="background-image: url('hund-und-ich.jpg');">
     <div class="overlay"></div>
     <div class="container hero-content">
-      <h1>Für ein glückliches Hundeleben</h1>
+      <h1>Für ein gesundes Hundeleben</h1>
       <p class="subtitle">Natürlich, artgerecht und bedarfsdeckend</p>
       <a class="cta" href="#kontakt">Jetzt kostenlos beraten lassen</a>
     </div>
   </header>
 
   <main class="container">
-    <!-- Features / Vorteile -->
+    <!-- Vorteile -->
     <section class="features">
       <div class="card">
         <h2>Individuell abgestimmt</h2>
@@ -42,38 +43,44 @@
       <p>Schreib mir direkt – ich freue mich auf deine Nachricht:</p>
 
       <form action="mailto:emilybrening@icloud.com" method="post" enctype="text/plain" class="form">
-        <label>
-          Vorname
-          <input type="text" name="Vorname" required>
-        </label>
-        <label>
-          Nachname
-          <input type="text" name="Nachname" required>
-        </label>
-        <label>
-          E-Mail-Adresse
-          <input type="email" name="Email" required>
-        </label>
-        <label>
-          Telefonnummer
-          <input type="tel" name="Telefonnummer" required>
-        </label>
-        <label>
-          Aktuelles Futter
-          <input type="text" name="Aktuelles Futter" required>
-        </label>
-        <label>
-          Regelmäßig entwurmt
-          <select name="Entwurmt" required>
-            <option value="">Bitte wählen</option>
-            <option value="Ja">Ja</option>
-            <option value="Nein">Nein</option>
-          </select>
-        </label>
+        <div class="row">
+          <label>
+            Vorname
+            <input type="text" name="Vorname" required>
+          </label>
+          <label>
+            Nachname
+            <input type="text" name="Nachname" required>
+          </label>
+        </div>
+
+        <div class="row">
+          <label>
+            E-Mail-Adresse
+            <input type="email" name="Email" required>
+          </label>
+          <label>
+            Telefonnummer
+            <input type="tel" name="Telefonnummer" required>
+          </label>
+        </div>
+
+        <div class="row">
+          <label>
+            Aktuelles Futter
+            <input type="text" name="Aktuelles Futter" required>
+          </label>
+          <label>
+            Regelmäßig entwurmt
+            <input type="text" name="Regelmäßig entwurmt" required>
+          </label>
+        </div>
+
         <label>
           Probleme / Unverträglichkeiten
           <textarea name="Probleme" rows="4" placeholder="Bitte beschreibe hier Probleme oder Unverträglichkeiten..." required></textarea>
         </label>
+
         <button type="submit">Nachricht senden</button>
       </form>
     </section>
@@ -87,7 +94,6 @@
   </footer>
 
   <script>
-    // aktuelles Jahr automatisch einfügen
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
