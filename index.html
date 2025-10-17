@@ -2,40 +2,30 @@
 <html lang="de">
 <head>
   <meta charset="utf-8" />
-  <meta http-equiv="Content-Language" content="de">
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Kostenlose Ernährungsberatung für Hunde – natürliche Tiernahrung und individuelle Futterpläne für ein gesundes Hundeleben.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Ernährungsberatung</title>
-  <link rel="stylesheet" href="styles.css" />
   <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
   <!-- Hero-Bereich -->
-  <header class="hero" style="background-image: url('17+-_MG_7590-Bearbeitet.jpg');">
+  <header class="hero">
     <div class="overlay"></div>
     <div class="container hero-content">
       <h1>Für ein gesundes Hundeleben</h1>
       <p class="subtitle">Natürlich, artgerecht und bedarfsdeckend</p>
       <a class="cta" href="#kontakt">Jetzt kostenlos beraten lassen</a>
     </div>
+    <img src="17+-_MG_7590-Bearbeitet.jpg" alt="Hund und ich" class="hero-img">
   </header>
 
   <main class="container">
-    <!-- Features / Vorteile -->
+    <!-- Features -->
     <section class="features">
-      <div class="card">
-        <h2>Individuell abgestimmt</h2>
-        <p>Jeder Hund ist einzigartig. Ich helfe dir, den perfekten Futterplan zu finden.</p>
-      </div>
-      <div class="card">
-        <h2>Natürlich & ausgewogen</h2>
-        <p>Gesunde Zutaten, abgestimmt auf Alter, Aktivität und Bedürfnisse deines Hundes.</p>
-      </div>
-      <div class="card">
-        <h2>Kostenlose Beratung</h2>
-        <p>Ich begleite dich persönlich – unverbindlich und kostenfrei.</p>
-      </div>
+      <div class="card"> <h2>Individuell abgestimmt</h2> <p>Jeder Hund ist einzigartig. Ich helfe dir, den perfekten Futterplan zu finden.</p> </div>
+      <div class="card"> <h2>Natürlich & ausgewogen</h2> <p>Gesunde Zutaten, abgestimmt auf Alter, Aktivität und Bedürfnisse deines Hundes.</p> </div>
+      <div class="card"> <h2>Kostenlose Beratung</h2> <p>Ich begleite dich persönlich – unverbindlich und kostenfrei.</p> </div>
     </section>
 
     <!-- Kontaktformular -->
@@ -45,72 +35,46 @@
 
       <form action="mailto:emilybrening@icloud.com" method="post" enctype="text/plain" class="form">
         <div class="row">
-          <label>
-            Vorname
-            <input type="text" name="Vorname" required>
-          </label>
-          <label>
-            Nachname
-            <input type="text" name="Nachname" required>
-          </label>
+          <label>Vorname<input type="text" name="Vorname" required></label>
+          <label>Nachname<input type="text" name="Nachname" required></label>
         </div>
-
         <div class="row">
-          <label>
-            E-Mail-Adresse
-            <input type="email" name="Email" required>
-          </label>
-          <label>
-            Telefonnummer
-            <input type="tel" name="Telefonnummer" required>
-          </label>
+          <label>E-Mail-Adresse<input type="email" name="Email" required></label>
+          <label>Telefonnummer<input type="tel" name="Telefonnummer" required></label>
         </div>
-
         <div class="row">
-          <label>
-            Aktuelles Futter
-            <input type="text" name="Aktuelles Futter" required>
-          </label>
-          <label>
-            Regelmäßig entwurmt
-            <input type="text" name="Regelmäßig entwurmt" required>
-          </label>
+          <label>Aktuelles Futter<input type="text" name="Aktuelles Futter" required></label>
+          <label>Regelmäßig entwurmt<input type="text" name="Regelmäßig entwurmt" required></label>
         </div>
-
-        <label>
-          Probleme / Unverträglichkeiten
-          <textarea name="Probleme" rows="4" placeholder="Bitte beschreibe hier Probleme oder Unverträglichkeiten..." required></textarea>
-        </label>
+        <label>Probleme / Unverträglichkeiten<textarea name="Probleme" rows="4" placeholder="Bitte beschreibe hier Probleme oder Unverträglichkeiten..." required></textarea></label>
 
         <button type="submit">Nachricht senden</button>
       </form>
     </section>
   </main>
 
-  <!-- Footer -->
   <footer class="footer">
     <div class="container">
       © <span id="year"></span> Ernährungsberatung · <a href="impressum.html">Impressum</a>
     </div>
   </footer>
 
-  <script>
-    // Jahr automatisch einfügen
-    document.getElementById('year').textContent = new Date().getFullYear();
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
 
-    // Scroll-Animation für Features-Karten
-    const cards = document.querySelectorAll('.card');
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if(entry.isIntersecting){
-          entry.target.classList.add('visible');
-          observer.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.2 });
+// Scroll-Animation für Features-Karten
+const cards = document.querySelectorAll('.card');
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if(entry.isIntersecting){
+      entry.target.classList.add('visible');
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.2 });
 
-    cards.forEach(card => observer.observe(card));
-  </script>
+cards.forEach(card => observer.observe(card));
+</script>
 
 </body>
 </html>
