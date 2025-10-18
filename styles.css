@@ -12,7 +12,7 @@ body {
   text-align: center;
 }
 
-/* HERO */
+/* HERO (unverändert) */
 .hero { 
   padding: 6rem 1rem 4rem 1rem;
   background-color: var(--beige-bg);
@@ -44,7 +44,7 @@ body {
 }
 .cta:hover { background:#b59366; }
 
-/* FEATURES */
+/* FEATURES unter dem Button */
 .features { 
   display: flex; 
   justify-content: center; 
@@ -52,6 +52,7 @@ body {
   flex-wrap: wrap; 
   gap: 2rem; 
   padding: 4rem 1rem 2rem 1rem;
+  margin-top: 3rem; /* Abstand unter Button */
 }
 
 .feature { 
@@ -63,7 +64,7 @@ body {
   opacity:0; 
   transform: translateY(50px); 
   transition: all 0.8s ease-out; 
-  margin: 0 auto; /* zentriert die Feature-Box */
+  margin: 0 auto; 
   text-align: center;
 }
 
@@ -87,10 +88,41 @@ body {
   box-shadow:0 4px 10px rgba(0,0,0,0.1); 
   text-align: center;
 }
+
 .kontakt h2 { margin-bottom:1.5rem; }
-.form label { display:block; margin-bottom:1rem; text-align: left; max-width: 100%; margin-left: auto; margin-right: auto; }
-.form input, .form textarea { width:90%; padding:0.7rem; border:1px solid #ccc; border-radius:8px; margin:0.3rem auto 1rem auto; display:block; font-size:1rem; box-sizing:border-box; }
-.form button { background: var(--accent); color:white; border:none; padding:0.8rem 1.5rem; border-radius:10px; font-size:1rem; cursor:pointer; display:block; margin:1rem auto 0; }
+
+.form label { 
+  display:block; 
+  margin-bottom:1rem; 
+  text-align: left; 
+  max-width: 100%; 
+  margin-left: auto; 
+  margin-right: auto; 
+}
+
+.form input, .form textarea { 
+  width:90%; 
+  padding:0.7rem; 
+  border:1px solid #ccc; 
+  border-radius:8px; 
+  margin:0.3rem auto 1rem auto; 
+  display:block; 
+  font-size:1rem; 
+  box-sizing:border-box; 
+}
+
+.form button { 
+  background: var(--accent); 
+  color:white; 
+  border:none; 
+  padding:0.8rem 1.5rem; 
+  border-radius:10px; 
+  font-size:1rem; 
+  cursor:pointer; 
+  display:block; 
+  margin:1rem auto 0; 
+}
+
 .form button:hover { background:#b59366; }
 
 /* FOOTER */
@@ -102,7 +134,7 @@ footer a { color:var(--accent); text-decoration:none; margin-left:10px; }
   .features { flex-direction:column; align-items:center; gap:1.5rem; padding:2rem 1rem; }
   .feature { max-width:90%; }
   .kontakt { margin:2rem auto; padding:2rem 1rem; max-width:95%; }
+  .form input, .form textarea { width:95%; }
   .hero-title { font-size:3rem; }
   .subtitle { font-size:1.4rem; }
-  .form input, .form textarea { width:95%; }
 }
