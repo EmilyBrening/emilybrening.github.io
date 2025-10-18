@@ -7,7 +7,7 @@
 body {
   margin: 0;
   font-family: 'Open Sans', sans-serif;
-  background-color: var(--beige-bg);
+  background-color: var(--accent);
   color: var(--text);
   text-align: center;
 }
