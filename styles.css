@@ -1,8 +1,7 @@
 :root {
   --beige-bg: #f7f2e9;
-  --accent: #c4a484; /* Button & Überschrift */
+  --accent: #c4a484;
   --text: #3b2f2f;
-  --white: #fff;
 }
 
 body {
@@ -14,38 +13,10 @@ body {
 
 /* HERO */
 .hero { position: relative; text-align:center; }
-.hero-image-container { width:100%; height:100%; position:relative; }
-.hero-image { 
-  width:100%; 
-  height:400px; 
-  object-fit:cover; 
-  object-position:center 30%; 
-  display:block; 
-}
-
-.hero-content { 
-  position:absolute; 
-  top:15%; /* Überschrift weiter runter */
-  left:50%; 
-  transform:translateX(-50%);
-  color: var(--accent); /* gleiche Farbe wie Button */
-  text-shadow: 2px 2px 5px rgba(0,0,0,0.2);
-  z-index:1;
-}
-
-.hero-content h1 { 
-  font-family:'Handlee', cursive; 
-  font-style:italic; 
-  font-size:3rem; 
-  margin:0 0 0.5rem 0; 
-}
-
-.subtitle { 
-  font-size:1.3rem; 
-  margin-bottom:1rem; 
-  color: var(--accent); 
-}
-
+.hero-image { width:100%; height:400px; object-fit:cover; object-position:center 30%; }
+.hero-content { position:absolute; top:15%; left:50%; transform:translateX(-50%); color:var(--accent); text-shadow:2px2px5px rgba(0,0,0,0.2); z-index:1; }
+.hero-content h1 { font-family:'Handlee', cursive; font-style:italic; font-size:3rem; margin:0 0 0.5rem 0; }
+.subtitle { font-size:1.3rem; margin-bottom:1rem; color:var(--accent); }
 .cta { display:inline-block; background:var(--accent); color:white; padding:0.8rem 1.6rem; border-radius:10px; text-decoration:none; font-weight:600; transition:0.3s; }
 .cta:hover { background:#b59366; }
 
@@ -70,10 +41,7 @@ footer a { color:var(--accent); text-decoration:none; margin-left:10px; }
 @media(max-width:768px){
   .hero-image { height:300px; object-position:left top; transform:scale(1.3); }
   .hero-content { top:20%; }
-  
   .features { flex-direction:column; align-items:center; gap:1.5rem; padding:2rem 1rem; }
   .feature { max-width:90%; }
-
-  .kontakt { margin:2rem auto; padding:2rem 1rem; max-width:95%; } 
-  .form input, .form textarea { width:100%; } 
+  .kontakt { margin:2rem auto; padding:2rem 1rem; max-width:95%; }
 }
