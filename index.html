@@ -20,15 +20,15 @@
 
   <!-- FEATURES -->
   <section id="features" class="features">
-    <div class="feature hidden" data-direction="left">
+    <div class="feature hidden">
       <h2>Individuell</h2>
       <p>Jeder Hund ist anders – die Ernährung sollte es auch sein.</p>
     </div>
-    <div class="feature hidden" data-direction="bottom">
+    <div class="feature hidden">
       <h2>Natürlich</h2>
       <p>Futter, das auf natürliche Inhaltsstoffe setzt – für mehr Vitalität.</p>
     </div>
-    <div class="feature hidden" data-direction="right">
+    <div class="feature hidden">
       <h2>Kostenlos</h2>
       <p>Deine persönliche Beratung – ganz unverbindlich und gratis.</p>
     </div>
@@ -58,15 +58,15 @@
 
   <!-- SCRIPTS -->
   <script>
-    // Feature Animation beim Scrollen mit nacheinander-Effekt
+    // Feature Animation beim Scrollen, nacheinander von links nach rechts
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if(entry.isIntersecting){
-          const dir = entry.target.dataset.direction;
+          const index = Array.from(document.querySelectorAll('.feature')).indexOf(entry.target);
           setTimeout(() => {
-            entry.target.classList.add('show', dir);
-          }, Array.from(document.querySelectorAll('.feature')).indexOf(entry.target) * 300); 
-          observer.unobserve(entry.target);
+            entry.target.classList.add('show');
+          }, index * 300); // Verzögerung zwischen den Features
+          observer.unobserve(entry.target); // nur einmal animieren
         }
       });
     });
