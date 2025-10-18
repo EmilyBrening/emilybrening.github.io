@@ -109,6 +109,27 @@ body {
 }
 
 
+/* Standard: Bild auf Desktop verstecken */
+.mobile-image {
+  display: none;
+}
+
+/* Auf Handy anzeigen (max-width z.B. 768px) */
+@media screen and (max-width: 768px) {
+  .mobile-image {
+    display: block;
+    text-align: center;
+    margin: 1.5rem 0;
+  }
+  
+  .mobile-image img {
+    width: 90%;          /* Bild passt sich der Bildschirmbreite an */
+    height: auto;
+    border-radius: 10px; /* optional abgerundete Ecken */
+  }
+}
+
+
 /* FOOTER */
 .footer-links {
   margin-top: 0.5rem;
