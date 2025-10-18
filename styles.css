@@ -9,44 +9,49 @@ body {
   font-family: 'Open Sans', sans-serif;
   background-color: var(--beige-bg);
   color: var(--text);
+  text-align: center; /* Alles zentrieren */
 }
 
 /* HERO */
 .hero { 
-  text-align:center; 
-  padding:4rem 1rem; 
+  padding: 4rem 1rem;
   background-color: var(--beige-bg);
 }
 
-.hero-content h1 { 
-  font-family:'Handlee', cursive; 
-  font-style:italic; 
-  font-size:3rem; 
-  margin:0 0 1rem 0; 
+.hero-title { 
+  font-family: 'Great Vibes', cursive; /* verschnörkelte Schrift */
+  font-size: 4rem; /* größer */
   color: var(--accent);
   text-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+  margin: 0 0 1rem 0;
 }
 
 .subtitle { 
-  font-size:1.3rem; 
-  margin-bottom:2rem; 
-  color: var(--accent); 
+  font-size: 1.5rem; 
+  margin-bottom: 2rem; 
+  color: var(--accent);
 }
 
 .cta { 
   display:inline-block; 
-  background:var(--accent); 
-  color:white; 
-  padding:0.8rem 1.6rem; 
-  border-radius:10px; 
-  text-decoration:none; 
-  font-weight:600; 
-  transition:0.3s; 
+  background: var(--accent); 
+  color: white; 
+  padding: 0.8rem 1.6rem; 
+  border-radius: 10px; 
+  text-decoration: none; 
+  font-weight: 600; 
+  transition: 0.3s; 
 }
 .cta:hover { background:#b59366; }
 
 /* FEATURES */
-.features { display:flex; justify-content:center; gap:2rem; flex-wrap:wrap; padding:3rem 1rem; }
+.features { 
+  display:flex; 
+  justify-content:center; 
+  gap:2rem; 
+  flex-wrap:wrap; 
+  padding:3rem 1rem; 
+}
 
 .feature { 
   background:#fff; 
@@ -54,7 +59,6 @@ body {
   box-shadow:0 4px 8px rgba(0,0,0,0.1); 
   padding:2rem; 
   max-width:280px; 
-  text-align:center; 
   opacity:0; 
   transform: translateY(50px); 
   transition: all 0.8s ease-out; 
@@ -79,10 +83,10 @@ body {
   border-radius:20px; 
   box-shadow:0 4px 10px rgba(0,0,0,0.1); 
 }
-.kontakt h2 { text-align:center; margin-bottom:1.5rem; }
+.kontakt h2 { margin-bottom:1.5rem; }
 .form label { display:block; margin-bottom:1rem; }
 .form input, .form textarea { width:100%; padding:0.7rem; border:1px solid #ccc; border-radius:8px; margin-top:0.3rem; font-size:1rem; box-sizing:border-box; }
-.form button { background:var(--accent); color:white; border:none; padding:0.8rem 1.5rem; border-radius:10px; font-size:1rem; cursor:pointer; display:block; margin:1rem auto 0; }
+.form button { background: var(--accent); color:white; border:none; padding:0.8rem 1.5rem; border-radius:10px; font-size:1rem; cursor:pointer; display:block; margin:1rem auto 0; }
 .form button:hover { background:#b59366; }
 
 /* FOOTER */
