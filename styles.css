@@ -14,20 +14,20 @@ body {
 
 /* HERO */
 .hero { 
-  padding: 5rem 1rem;
+  padding: 6rem 1rem 4rem 1rem;
   background-color: var(--beige-bg);
 }
 
 .hero-title { 
-  font-family: 'Dancing Script', cursive;
-  font-size: 3.5rem;
+  font-family: 'Handlee', cursive;
+  font-size: 5rem; /* deutlich größer */
   font-weight: 400;
   color: var(--accent);
   margin: 0 0 1rem 0;
 }
 
 .subtitle { 
-  font-size: 1.5rem; 
+  font-size: 1.8rem; 
   margin-bottom: 2rem; 
   color: var(--accent);
 }
@@ -98,6 +98,6 @@ footer a { color:var(--accent); text-decoration:none; margin-left:10px; }
   .features { flex-direction:column; align-items:center; gap:1.5rem; padding:2rem 1rem; }
   .feature { max-width:90%; }
   .kontakt { margin:2rem auto; padding:2rem 1rem; max-width:95%; }
-  .hero-title { font-size:2.5rem; }
-  .subtitle { font-size:1.2rem; }
+  .hero-title { font-size:3rem; }
+  .subtitle { font-size:1.4rem; }
 }
