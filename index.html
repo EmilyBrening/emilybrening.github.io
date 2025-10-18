@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ernährungsberatung</title>
-  <link href="https://fonts.googleapis.com/css2?family=Handlee&family=Great+Vibes&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Handlee&family=Dancing+Script&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -58,7 +58,6 @@
 
   <!-- SCRIPTS -->
   <script>
-    // Feature-Animation beim Scrollen mit Richtung
     const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
         if(entry.isIntersecting){
@@ -69,7 +68,6 @@
     });
     document.querySelectorAll('.feature').forEach(el => observer.observe(el));
 
-    // Kontaktformular Web3Forms
     const form = document.getElementById('kontaktForm');
     form.addEventListener('submit', async (e) => {
       e.preventDefault();
