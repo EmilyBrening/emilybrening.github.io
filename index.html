@@ -11,7 +11,6 @@
 
   <!-- HERO -->
   <header class="hero">
-    <img src="images/wir.jpg" alt="Leo und Emily" class="hero-image">
     <div class="hero-content">
       <h1>Für ein gesundes Hundeleben</h1>
       <p class="subtitle">Natürlich, artgerecht und bedarfsdeckend</p>
@@ -59,6 +58,7 @@
 
   <!-- SCRIPTS -->
   <script>
+    // Feature-Animation beim Scrollen
     const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
         if(entry.isIntersecting){
@@ -68,6 +68,7 @@
     });
     document.querySelectorAll('.feature').forEach(el => observer.observe(el));
 
+    // Kontaktformular Web3Forms
     const form = document.getElementById('kontaktForm');
     form.addEventListener('submit', async (e) => {
       e.preventDefault();
