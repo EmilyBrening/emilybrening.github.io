@@ -85,24 +85,27 @@ body {
 
 .kontakt h2 { margin-bottom:1.5rem; }
 
-.form label { 
-  display:block; 
-  margin-bottom:1rem; 
-  text-align: left; 
-  max-width: 100%; 
-  margin-left: auto; 
-  margin-right: auto; 
+/* Labels + Inputs nebeneinander */
+.form label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  width: 90%;
+  max-width: 450px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1rem;
 }
 
-.form input, .form textarea { 
-  width:90%; 
-  padding:0.7rem; 
-  border:1px solid #ccc; 
-  border-radius:8px; 
-  margin:0.3rem auto 1rem auto; 
-  display:block; 
-  font-size:1rem; 
-  box-sizing:border-box; 
+.form label input,
+.form label textarea {
+  width: 65%;
+  padding: 0.7rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
 }
 
 .form button { 
@@ -128,7 +131,9 @@ footer a { color:var(--accent); text-decoration:none; margin-left:10px; }
   .features { flex-direction:column; align-items:center; gap:1.5rem; padding:2rem 1rem; }
   .feature { max-width:90%; }
   .kontakt { margin:2rem auto; padding:2rem 1rem; max-width:95%; }
-  .form input, .form textarea { width:95%; }
+  .form label { flex-direction: column; align-items: flex-start; }
+  .form label input,
+  .form label textarea { width: 100%; }
   .hero-title { font-size:3rem; }
   .subtitle { font-size:1.4rem; }
 }
