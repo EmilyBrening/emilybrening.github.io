@@ -13,7 +13,7 @@
   <header class="hero">
     <div class="hero-content">
       <h1 class="hero-title">Für ein gesundes Hundeleben</h1>
-      <p class="subtitle">natürlich, artgerecht und bedarfsdeckend</p>
+      <p class="subtitle">Natürlich, artgerecht und bedarfsdeckend</p>
       <a class="cta" href="#features">Jetzt kostenlos beraten lassen</a>
     </div>
   </header>
@@ -58,12 +58,15 @@
 
   <!-- SCRIPTS -->
   <script>
-    // Feature Animation beim Scrollen
-    const observer = new IntersectionObserver(entries => {
+    // Feature Animation beim Scrollen mit nacheinander-Effekt
+    const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if(entry.isIntersecting){
           const dir = entry.target.dataset.direction;
-          entry.target.classList.add('show', dir);
+          setTimeout(() => {
+            entry.target.classList.add('show', dir);
+          }, Array.from(document.querySelectorAll('.feature')).indexOf(entry.target) * 300); 
+          observer.unobserve(entry.target);
         }
       });
     });
