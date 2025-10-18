@@ -1,84 +1,91 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Ernährungsberatung</title>
-  <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kostenlose Ernährungsberatung</title>
   <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Handlee&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-
-  <!-- Hero-Bereich -->
+  <!-- HERO-BEREICH -->
   <header class="hero">
     <div class="container hero-content">
       <h1>Für ein gesundes Hundeleben</h1>
-      <p class="subtitle">natürlich, artgerecht und bedarfsdeckend</p>
+      <p class="subtitle">Natürlich, artgerecht und bedarfsdeckend</p>
+      <a class="cta" href="#kontakt">Jetzt kostenlos beraten lassen</a>
     </div>
-
-    <!-- Großes Bild von Leo und dir -->
     <div class="hero-image-container">
       <img src="https://cvws.icloud-content.com/B/AYt8weh491B4qZkOTaFEPbyBT8V_Ad3BO-IDWipcES_rW4GQiiwQDwzb/17+-+_MG_7590-Bearbeitet.jpg?o=AstGfRAApa8bq2brHELupe58K35j6ui1TrU6LBI3htV9&v=1&x=3&a=CAogTeyO9qRseLn3QJ3WmQGBIaWAwMNBFWcXpTh9dfESoH8SbxCekeCdnzMYnu67n58zIgEAUgSBT8V_WgQQDwzbaicBZFYVbhoXnJzR4htOajIxGUXp9rJmA0HIQRxsSCmu8o8fuwGELzhyJ1-omLwC5hKAACIV2OgR6UbzT7jBPn5WmIRcMkCu13TsbmMWP1RftA&e=1760734148&fl=&r=1484aadc-42f5-4ada-b237-81d39cbf665b-1&k=hhwRdZJKu9fOme8U9stx0w&ckc=com.apple.clouddocs&ckz=com.apple.CloudDocs&p=177&s=UEQxwVqOJkAK-4PG_7QLZJfKwCo&cd=i" alt="Leo und Emily" class="hero-image">
     </div>
-
-    <a class="cta" href="#kontakt">Jetzt kostenlos beraten lassen</a>
   </header>
 
-  <main class="container">
-    <!-- Features -->
-    <section class="features">
-      <div class="card"> <h2>Individuell abgestimmt</h2> <p>Jeder Hund ist einzigartig. Ich helfe dir, den perfekten Futterplan zu finden.</p> </div>
-      <div class="card"> <h2>Natürlich & ausgewogen</h2> <p>Gesunde Zutaten, abgestimmt auf Alter, Aktivität und Bedürfnisse deines Hundes.</p> </div>
-      <div class="card"> <h2>Kostenlose Beratung</h2> <p>Ich begleite dich persönlich – unverbindlich und kostenfrei.</p> </div>
-    </section>
-
-    <!-- Kontaktformular -->
-    <section id="kontakt" class="contact">
-      <h2>Kontakt aufnehmen</h2>
-      <p>Schreib mir direkt – ich freue mich auf deine Nachricht:</p>
-
-      <form action="mailto:emilybrening@icloud.com" method="post" enctype="text/plain" class="form">
-        <div class="row">
-          <label>Vorname<input type="text" name="Vorname" required></label>
-          <label>Nachname<input type="text" name="Nachname" required></label>
-        </div>
-        <div class="row">
-          <label>E-Mail-Adresse<input type="email" name="Email" required></label>
-          <label>Telefonnummer<input type="tel" name="Telefonnummer" required></label>
-        </div>
-        <div class="row">
-          <label>Aktuelles Futter<input type="text" name="Aktuelles Futter" required></label>
-          <label>Regelmäßig entwurmt<input type="text" name="Regelmäßig entwurmt" required></label>
-        </div>
-        <label>Probleme / Unverträglichkeiten<textarea name="Probleme" rows="4" placeholder="Bitte beschreibe hier Probleme oder Unverträglichkeiten..." required></textarea></label>
-
-        <button type="submit">Nachricht senden</button>
-      </form>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="container">
-      © <span id="year"></span> Ernährungsberatung · <a href="impressum.html">Impressum</a>
+  <!-- FEATURES -->
+  <section class="features">
+    <div class="feature hidden">
+      <h2>Individuell</h2>
+      <p>Jeder Hund ist anders – die Ernährung sollte es auch sein.</p>
     </div>
+    <div class="feature hidden">
+      <h2>Natürlich</h2>
+      <p>Futter, das auf natürliche Inhaltsstoffe setzt – für mehr Vitalität.</p>
+    </div>
+    <div class="feature hidden">
+      <h2>Kostenlos</h2>
+      <p>Deine persönliche Beratung – ganz unverbindlich und gratis.</p>
+    </div>
+  </section>
+
+  <!-- KONTAKTFORMULAR -->
+  <section id="kontakt" class="kontakt">
+    <h2>Kontaktformular</h2>
+    <form id="kontaktForm" class="form">
+      <input type="hidden" name="access_key" value="82960600-fdb2-401d-b2c5-049d58712101">
+      <label>Vorname* <input type="text" name="Vorname" required></label>
+      <label>Nachname* <input type="text" name="Nachname" required></label>
+      <label>E-Mail-Adresse* <input type="email" name="Email" required></label>
+      <label>Telefonnummer* <input type="text" name="Telefonnummer" required></label>
+      <label>Aktuelles Futter* <input type="text" name="Aktuelles Futter" required></label>
+      <label>Regelmäßig entwurmt* <input type="text" name="Regelmäßig entwurmt" required></label>
+      <label>Probleme / Unverträglichkeiten <textarea name="Probleme"></textarea></label>
+      <button type="submit">Absenden</button>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 Emily Brening – Ernährungsberatung für Hunde</p>
+    <a href="impressum.html">Impressum</a>
   </footer>
 
-<script>
-document.getElementById('year').textContent = new Date().getFullYear();
+  <script>
+    // Scroll-Animation Features
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if(entry.isIntersecting){
+          entry.target.classList.add('show');
+        }
+      });
+    });
 
-// Scroll-Animation für Features-Karten
-const cards = document.querySelectorAll('.card');
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if(entry.isIntersecting){
-      entry.target.classList.add('visible');
-      observer.unobserve(entry.target);
-    }
-  });
-}, { threshold: 0.2 });
+    document.querySelectorAll('.feature').forEach(el => observer.observe(el));
 
-cards.forEach(card => observer.observe(card));
-</script>
-
+    // Web3Forms: Formular absenden via JS, Erfolgsmeldung direkt
+    const form = document.getElementById('kontaktForm');
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const data = new FormData(form);
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        body: data
+      });
+      if(response.ok){
+        alert('✅ Danke! Deine Nachricht wurde erfolgreich gesendet.');
+        form.reset();
+      } else {
+        alert('❌ Ups, etwas ist schiefgelaufen. Bitte versuche es später.');
+      }
+    });
+  </script>
 </body>
 </html>
