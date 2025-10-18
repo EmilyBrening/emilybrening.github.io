@@ -138,34 +138,94 @@ footer a { color:var(--accent); text-decoration:none; margin-left:10px; }
   .subtitle { font-size:1.4rem; }
 }
 
+/* === IMPRESSUM === */
+
 .impressum-content {
-  background: var(--beige-bg);
-  padding: 3rem 2rem;
-  max-width: 700px;
+  background-color: #f7f2e8; /* sanftes Beige passend zur Hauptseite */
+  color: #333;
+  padding: 4rem 2rem;
+  max-width: 800px;
   margin: 0 auto;
-  text-align: left;
-  line-height: 1.6;
   box-sizing: border-box;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  line-height: 1.7;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .impressum-content h2 {
   font-family: 'Handlee', cursive;
-  color: var(--accent);
-  margin-top: 2rem;
+  color: #b28356; /* gleiche Farbe wie der Button */
+  margin-top: 2.5rem;
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+.impressum-content p {
+  font-size: 1.05rem;
+  margin-top: 1rem;
+  text-align: justify;
 }
 
 .impressum-content a {
-  color: var(--accent);
+  color: #b28356;
   text-decoration: none;
+  font-weight: 600;
 }
 
 .impressum-content a:hover {
   text-decoration: underline;
 }
 
-@media(max-width:768px){
+.impressum-content .container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.hero-title {
+  font-family: 'Handlee', cursive;
+  color: #b28356;
+  font-size: 2.5rem;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.1);
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #6a5a45;
+  font-weight: 500;
+}
+
+footer {
+  background: #efe7db;
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 0.95rem;
+  margin-top: 3rem;
+}
+
+footer a {
+  color: #b28356;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+@media(max-width: 768px) {
   .impressum-content {
     padding: 2rem 1rem;
     max-width: 95%;
+  }
+
+  .impressum-content h2 {
+    font-size: 1.4rem;
+  }
+
+  .impressum-content p {
+    font-size: 1rem;
   }
 }
