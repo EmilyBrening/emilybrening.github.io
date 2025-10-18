@@ -102,7 +102,7 @@ body {
 
 /* Absenden-Button anpassen (gleiche Farbe wie Hauptbutton) */
 .kontakt .form button {
-  background-color: #b28356; /* gleiche Farbe wie Hero-Button */
+  background-color: var(--beige-bg); /* gleiche Farbe wie Hero-Button */
   color: #fff;
   border: none;
   padding: 1rem;
