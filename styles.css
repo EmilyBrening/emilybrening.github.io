@@ -19,10 +19,10 @@ body {
 }
 
 .hero-title { 
-  font-family: 'Great Vibes', cursive;
-  font-size: 4rem;
+  font-family: 'Dancing Script', cursive;
+  font-size: 3.5rem;
+  font-weight: 400;
   color: var(--accent);
-  text-shadow: 2px 2px 5px rgba(0,0,0,0.2);
   margin: 0 0 1rem 0;
 }
 
@@ -98,4 +98,6 @@ footer a { color:var(--accent); text-decoration:none; margin-left:10px; }
   .features { flex-direction:column; align-items:center; gap:1.5rem; padding:2rem 1rem; }
   .feature { max-width:90%; }
   .kontakt { margin:2rem auto; padding:2rem 1rem; max-width:95%; }
+  .hero-title { font-size:2.5rem; }
+  .subtitle { font-size:1.2rem; }
 }
