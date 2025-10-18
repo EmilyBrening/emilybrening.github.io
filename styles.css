@@ -34,7 +34,7 @@ body {
 
 .cta { 
   display:inline-block; 
-  background: var(--accent); 
+  background: var(--beige-bg); 
   color: white; 
   padding: 0.8rem 1.6rem; 
   border-radius: 10px; 
@@ -42,7 +42,7 @@ body {
   font-weight: 600; 
   transition: 0.3s; 
 }
-.cta:hover { background:#b59366; }
+.cta:hover { background:#a; }
 
 /* FEATURES */
 .features { 
