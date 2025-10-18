@@ -13,8 +13,8 @@
   <header class="hero">
     <div class="hero-content">
       <h1 class="hero-title">Für ein gesundes Hundeleben</h1>
-      <p class="subtitle">natürlich, artgerecht und bedarfsdeckend</p>
-      <a class="cta" href="#features">Jetzt kostenlos beraten lassen</a>
+      <p class="subtitle">Natürlich, artgerecht und bedarfsdeckend</p>
+      <a class="cta" href="#kontakt">Jetzt kostenlos beraten lassen</a>
     </div>
   </header>
 
@@ -66,11 +66,19 @@
           setTimeout(() => {
             entry.target.classList.add('show');
           }, index * 300); // Verzögerung zwischen den Features
-          observer.unobserve(entry.target); // nur einmal animieren
+          observer.unobserve(entry.target);
         }
       });
     });
     document.querySelectorAll('.feature').forEach(el => observer.observe(el));
+
+    // Smooth Scroll für Button
+    document.querySelector('.cta').addEventListener('click', function(e){
+      e.preventDefault();
+      document.querySelector('#kontakt').scrollIntoView({
+        behavior: 'smooth'
+      });
+    });
 
     // Kontaktformular Web3Forms
     const form = document.getElementById('kontaktForm');
