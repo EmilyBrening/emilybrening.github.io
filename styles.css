@@ -123,8 +123,23 @@ body {
 .form button:hover { background:#b59366; }
 
 /* FOOTER */
-footer { text-align:center; padding:1.5rem; background:var(--beige-bg); font-size:0.9rem; }
-footer a { color:var(--accent); text-decoration:none; margin-left:10px; }
+.footer-links {
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+  text-align: center;
+}
+
+.footer-links a {
+  color: #b28356;
+  text-decoration: none;
+  font-weight: 600;
+  margin: 0 0.5rem;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
 
 /* RESPONSIVE */
 @media(max-width:768px){
