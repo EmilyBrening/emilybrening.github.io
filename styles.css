@@ -12,7 +12,7 @@ body {
   text-align: center;
 }
 
-/* HERO (unverändert) */
+/* HERO */
 .hero { 
   padding: 6rem 1rem 4rem 1rem;
   background-color: var(--beige-bg);
@@ -44,7 +44,7 @@ body {
 }
 .cta:hover { background:#b59366; }
 
-/* FEATURES unter dem Button */
+/* FEATURES */
 .features { 
   display: flex; 
   justify-content: center; 
@@ -61,7 +61,7 @@ body {
   padding:2rem; 
   max-width:280px; 
   opacity:0; 
-  transform: translateX(-50px); /* Ausgang links */
+  transform: translateX(-50px); 
   transition: all 0.8s ease-out; 
   margin: 0 auto; 
   text-align: center;
