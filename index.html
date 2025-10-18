@@ -3,20 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kostenlose Ernährungsberatung</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>Ernährungsberatung</title>
   <link href="https://fonts.googleapis.com/css2?family=Handlee&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- HERO-BEREICH -->
+
+  <!-- HERO -->
   <header class="hero">
-    <div class="container hero-content">
+    <div class="hero-image-container">
+      <img src="https://cvws.icloud-content.com/B/AYt8weh491B4qZkOTaFEPbyBT8V_Ad3BO-IDWipcES_rW4GQiiwQDwzb/17+-+_MG_7590-Bearbeitet.jpg?o=AstGfRAApa8bq2brHELupe58K35j6ui1TrU6LBI3htV9&v=1&x=3&a=CAogTeyO9qRseLn3QJ3WmQGBIaWAwMNBFWcXpTh9dfESoH8SbxCekeCdnzMYnu67n58zIgEAUgSBT8V_WgQQDwzbaicBZFYVbhoXnJzR4htOajIxGUXp9rJmA0HIQRxsSCmu8o8fuwGELzhyJ1-omLwC5hKAACIV2OgR6UbzT7jBPn5WmIRcMkCu13TsbmMWP1RftA&e=1760734148&fl=&r=1484aadc-42f5-4ada-b237-81d39cbf665b-1&k=hhwRdZJKu9fOme8U9stx0w&ckc=com.apple.clouddocs&ckz=com.apple.CloudDocs&p=177&s=UEQxwVqOJkAK-4PG_7QLZJfKwCo&cd=i" alt="Leo und Emily" class="hero-image">
+    </div>
+    <div class="hero-content">
       <h1>Für ein gesundes Hundeleben</h1>
       <p class="subtitle">Natürlich, artgerecht und bedarfsdeckend</p>
       <a class="cta" href="#kontakt">Jetzt kostenlos beraten lassen</a>
-    </div>
-    <div class="hero-image-container">
-      <img src="https://cvws.icloud-content.com/B/AYt8weh491B4qZkOTaFEPbyBT8V_Ad3BO-IDWipcES_rW4GQiiwQDwzb/17+-+_MG_7590-Bearbeitet.jpg?o=AstGfRAApa8bq2brHELupe58K35j6ui1TrU6LBI3htV9&v=1&x=3&a=CAogTeyO9qRseLn3QJ3WmQGBIaWAwMNBFWcXpTh9dfESoH8SbxCekeCdnzMYnu67n58zIgEAUgSBT8V_WgQQDwzbaicBZFYVbhoXnJzR4htOajIxGUXp9rJmA0HIQRxsSCmu8o8fuwGELzhyJ1-omLwC5hKAACIV2OgR6UbzT7jBPn5WmIRcMkCu13TsbmMWP1RftA&e=1760734148&fl=&r=1484aadc-42f5-4ada-b237-81d39cbf665b-1&k=hhwRdZJKu9fOme8U9stx0w&ckc=com.apple.clouddocs&ckz=com.apple.CloudDocs&p=177&s=UEQxwVqOJkAK-4PG_7QLZJfKwCo&cd=i" alt="Leo und Emily" class="hero-image">
     </div>
   </header>
 
@@ -58,6 +59,7 @@
     <a href="impressum.html">Impressum</a>
   </footer>
 
+  <!-- SCRIPTS -->
   <script>
     // Scroll-Animation Features
     const observer = new IntersectionObserver(entries => {
@@ -67,10 +69,9 @@
         }
       });
     });
-
     document.querySelectorAll('.feature').forEach(el => observer.observe(el));
 
-    // Web3Forms: Formular absenden via JS, Erfolgsmeldung direkt
+    // Web3Forms: Formular absenden via JS
     const form = document.getElementById('kontaktForm');
     form.addEventListener('submit', async (e) => {
       e.preventDefault();
@@ -87,5 +88,6 @@
       }
     });
   </script>
+
 </body>
 </html>
