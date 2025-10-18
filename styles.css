@@ -14,7 +14,7 @@ body {
 
 /* HERO */
 .hero { text-align:center; }
-.hero-content { margin-bottom:2.5rem; } /* mehr Abstand zwischen Button und Bild */
+.hero-content { margin-bottom:2.5rem; }
 .hero-content h1 { 
   font-family:'Handlee', cursive; 
   font-style:italic; 
@@ -41,10 +41,10 @@ body {
 .feature.show { opacity:1; transform:translateY(0); }
 
 /* KONTAKTFORMULAR */
-.kontakt { background:#fff; margin:2rem auto; padding:2rem; max-width:450px; border-radius:20px; box-shadow:0 4px 10px rgba(0,0,0,0.1); }
+.kontakt { background:#fff; margin:2rem auto; padding:2rem; max-width:500px; border-radius:20px; box-shadow:0 4px 10px rgba(0,0,0,0.1); }
 .kontakt h2 { text-align:center; margin-bottom:1.5rem; }
 .form label { display:block; margin-bottom:1rem; }
-.form input, .form textarea { width:90%; padding:0.7rem; border:1px solid #ccc; border-radius:8px; margin-top:0.3rem; font-size:1rem; box-sizing:border-box; }
+.form input, .form textarea { width:100%; padding:0.7rem; border:1px solid #ccc; border-radius:8px; margin-top:0.3rem; font-size:1rem; box-sizing:border-box; }
 .form button { background:var(--accent); color:white; border:none; padding:0.8rem 1.5rem; border-radius:10px; font-size:1rem; cursor:pointer; display:block; margin:1rem auto 0; }
 .form button:hover { background:#b59366; }
 
@@ -66,6 +66,6 @@ footer a { color:var(--accent); text-decoration:none; margin-left:10px; }
   .features { flex-direction:column; align-items:center; gap:1.5rem; padding:2rem 1rem; }
   .feature { max-width:90%; }
 
-  .kontakt { margin:2rem 1rem; padding:2rem 1rem; max-width:95%; }
-  .form input, .form textarea { width:95%; } /* Eingabefelder auf Handy proportional */
+  .kontakt { margin:2rem auto; padding:2rem 1rem; max-width:95%; } /* zentriert, gleiche Abstände links/rechts */
+  .form input, .form textarea { width:100%; } /* Eingabefelder proportional */
 }
