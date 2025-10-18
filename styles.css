@@ -9,18 +9,18 @@ body {
   font-family: 'Open Sans', sans-serif;
   background-color: var(--beige-bg);
   color: var(--text);
-  text-align: center; /* Alles zentrieren */
+  text-align: center;
 }
 
 /* HERO */
 .hero { 
-  padding: 4rem 1rem;
+  padding: 5rem 1rem;
   background-color: var(--beige-bg);
 }
 
 .hero-title { 
-  font-family: 'Great Vibes', cursive; /* verschnörkelte Schrift */
-  font-size: 4rem; /* größer */
+  font-family: 'Great Vibes', cursive;
+  font-size: 4rem;
   color: var(--accent);
   text-shadow: 2px 2px 5px rgba(0,0,0,0.2);
   margin: 0 0 1rem 0;
@@ -50,7 +50,7 @@ body {
   justify-content:center; 
   gap:2rem; 
   flex-wrap:wrap; 
-  padding:3rem 1rem; 
+  padding:4rem 1rem 2rem 1rem;
 }
 
 .feature { 
@@ -77,7 +77,7 @@ body {
 /* KONTAKTFORMULAR */
 .kontakt { 
   background:#fff; 
-  margin:2rem auto; 
+  margin:3rem auto; 
   padding:2rem; 
   max-width:500px; 
   border-radius:20px; 
