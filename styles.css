@@ -48,11 +48,10 @@ body {
 .features { 
   display: flex; 
   justify-content: center; 
-  align-items: center; 
   flex-wrap: wrap; 
   gap: 2rem; 
   padding: 4rem 1rem 2rem 1rem;
-  margin-top: 3rem; /* Abstand unter Button */
+  margin-top: 3rem; 
 }
 
 .feature { 
@@ -62,21 +61,16 @@ body {
   padding:2rem; 
   max-width:280px; 
   opacity:0; 
-  transform: translateY(50px); 
+  transform: translateX(-50px); /* Ausgang links */
   transition: all 0.8s ease-out; 
   margin: 0 auto; 
   text-align: center;
 }
 
-/* Animations nach Richtung */
-.feature.show.left { transform: translateX(0); opacity:1; }
-.feature.show.right { transform: translateX(0); opacity:1; }
-.feature.show.bottom { transform: translateY(0); opacity:1; }
-
-/* Ausgangszustände */
-.feature.hidden[data-direction="left"] { transform: translateX(-50px); }
-.feature.hidden[data-direction="right"] { transform: translateX(50px); }
-.feature.hidden[data-direction="bottom"] { transform: translateY(50px); }
+.feature.show { 
+  opacity:1; 
+  transform: translateX(0); 
+}
 
 /* KONTAKTFORMULAR */
 .kontakt { 
