@@ -144,27 +144,42 @@ footer a { color:var(--accent); text-decoration:none; margin-left:10px; }
   background-color: #f7f2e8; /* sanftes Beige passend zur Hauptseite */
   color: #333;
   padding: 4rem 2rem;
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
   box-sizing: border-box;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-  line-height: 1.7;
+  line-height: 1.8;
   font-family: 'Open Sans', sans-serif;
+  text-align: center; /* alles zentriert */
+}
+
+.hero-title {
+  font-family: 'Handlee', cursive;
+  color: #b28356; /* gleiche Farbe wie der Button */
+  font-size: 3rem; /* größer für mehr Präsenz */
+  text-shadow: 1px 1px 6px rgba(0,0,0,0.15);
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 1.3rem;
+  color: #6a5a45;
+  font-weight: 500;
+  text-align: center;
 }
 
 .impressum-content h2 {
   font-family: 'Handlee', cursive;
-  color: #b28356; /* gleiche Farbe wie der Button */
+  color: #b28356;
   margin-top: 2.5rem;
   font-size: 1.6rem;
-  text-align: center;
 }
 
 .impressum-content p {
   font-size: 1.05rem;
   margin-top: 1rem;
-  text-align: justify;
 }
 
 .impressum-content a {
@@ -180,21 +195,8 @@ footer a { color:var(--accent); text-decoration:none; margin-left:10px; }
 .impressum-content .container {
   display: flex;
   flex-direction: column;
+  align-items: center; /* sorgt für mittige Ausrichtung */
   gap: 1.5rem;
-}
-
-.hero-title {
-  font-family: 'Handlee', cursive;
-  color: #b28356;
-  font-size: 2.5rem;
-  text-shadow: 1px 1px 4px rgba(0,0,0,0.1);
-  margin-bottom: 0.5rem;
-}
-
-.subtitle {
-  font-size: 1.2rem;
-  color: #6a5a45;
-  font-weight: 500;
 }
 
 footer {
@@ -219,6 +221,10 @@ footer a:hover {
   .impressum-content {
     padding: 2rem 1rem;
     max-width: 95%;
+  }
+
+  .hero-title {
+    font-size: 2.3rem;
   }
 
   .impressum-content h2 {
